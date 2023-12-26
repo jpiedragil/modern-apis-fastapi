@@ -14,7 +14,7 @@ order_json = {
 class Order(BaseModel):
     item_id: int
     created_date: Optional[datetime.datetime]
-    pages_visited: List[int]
+    pages_visited: List[int] = []
     price: float
 
 
